@@ -1,8 +1,5 @@
-# Prerender.io configuration for SEO
-/*    /index.html   200
-
 # Prerender.io middleware for crawlers
-/*    https://service.prerender.io/https://tastecraft.netlify.app/*   200!   Role=prerender
+/*    https://service.prerender.io/https://cafeaddaa.netlify.app/:splat   200!   User-Agent=*bot*,*crawler*,*spider*,*crawling*,facebookexternalhit*,*Prerender*
 
-# Handle client-side routing
+# Handle client-side routing for regular users
 /*    /index.html   200

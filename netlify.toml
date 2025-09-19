@@ -5,7 +5,7 @@
 [build.environment]
   NODE_VERSION = "18"
 
-# Prerender.io configuration
+# Security headers
 [[headers]]
   for = "/*"
   [headers.values]
@@ -14,20 +14,15 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
-# Enable prerendering for crawlers
-[[edge_functions]]
-  function = "prerender"
-  path = "/*"
-
-# Redirect rules for Prerender.io
+# Prerender.io redirect for crawlers
 [[redirects]]
   from = "/*"
-  to = "https://service.prerender.io/https://tastecraft.netlify.app/:splat"
+  to = "https://service.prerender.io/https://cafeaddaa.netlify.app/:splat"
   status = 200
-  conditions = {Role = ["prerender"]}
+  conditions = {User-Agent = ["*bot*", "*crawler*", "*spider*", "*crawling*", "facebookexternalhit*", "*Prerender*"]}
   force = true
 
-# Client-side routing fallback
+# Client-side routing fallback for regular users
 [[redirects]]
   from = "/*"
   to = "/index.html"
