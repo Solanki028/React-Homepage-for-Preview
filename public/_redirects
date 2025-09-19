@@ -1,5 +1,10 @@
-# Prerender.io middleware for crawlers
-/*    https://service.prerender.io/https://cafeaddaa.netlify.app/:splat   200!   User-Agent=*bot*,*crawler*,*spider*,*crawling*,facebookexternalhit*,*Prerender*
+# Prerender.io middleware for crawlers - specific bots first
+/*    https://service.prerender.io/https://cafeaddaa.netlify.app/:splat   200!   User-Agent=googlebot*
+/*    https://service.prerender.io/https://cafeaddaa.netlify.app/:splat   200!   User-Agent=facebookexternalhit*
+/*    https://service.prerender.io/https://cafeaddaa.netlify.app/:splat   200!   User-Agent=twitterbot*
+/*    https://service.prerender.io/https://cafeaddaa.netlify.app/:splat   200!   User-Agent=linkedinbot*
+/*    https://service.prerender.io/https://cafeaddaa.netlify.app/:splat   200!   User-Agent=*bot*
+/*    https://service.prerender.io/https://cafeaddaa.netlify.app/:splat   200!   User-Agent=*crawler*
 
 # Handle client-side routing for regular users
 /*    /index.html   200
