@@ -1,0 +1,8 @@
+# Prerender.io configuration for SEO
+/*    /index.html   200
+
+# Prerender.io middleware for crawlers
+/*    https://service.prerender.io/https://tastecraft.netlify.app/*   200!   Role=prerender
+
+# Handle client-side routing
+/*    /index.html   200
